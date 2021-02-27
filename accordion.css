@@ -1,0 +1,60 @@
+.accordion {
+  background-color: transparent;
+  color: #2E3A59;
+  cursor: pointer;
+  padding: 18px 8px 18px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-top: 1px solid #E7EBF0;
+  outline: none;
+  transition: 0.4s;
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion>img{
+    transition: all 0.3s ease;
+}
+.accordion>div{
+    display: flex;
+    align-items: center;
+}
+.accordion>div img{
+    padding-right: 18px;
+}
+.accordion:first-child{
+    border-top: 0 solid #E7EBF0;
+}
+
+.active, .accordion:hover {
+  color: #00C368;
+}
+.active>img{
+    transform: rotate(180deg);
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p{
+    padding-left: 42px;
+}
+/*.accordion:after {
+  content: url(img/arrow.svg); 
+  font-size: 13px;
+  color: #777;
+ 
+  margin-left: 5px;
+ padding-top: 8px;
+}
+
+.active:after {
+  content: url(img/arrow_down.svg);  
+}*/
